@@ -1,8 +1,7 @@
 import "./Contacts.css";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import contactOperations from "../../redux/phonebook/phonebook-operations";
-import contactsSelectors from "../../redux/phonebook/phonebook-selectors";
+import {contactsSelectors, contactOperations} from '../../redux/phonebook'
 
 const Contacts = ({ libraryContacts, onDelete }) => {
   return (
